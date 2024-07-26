@@ -1,4 +1,4 @@
-FROM manjarolinux/base:20240721
+FROM manjarolinux/base:20240723
 RUN pacman -Syu --noconfirm
 RUN pacman -Sy --noconfirm pamac-cli libsoup3
 RUN mkdir -p /var/tmp/pamac/dbs/sync
