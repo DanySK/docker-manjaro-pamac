@@ -15,7 +15,7 @@ jobs:
         # Set the image name as output
         id: compute-name
         run: |
-          echo image-name='${{ github.repository }}' | tr '[:upper:]' '[:lower:]' >> $GITHUB_OUTPUT
+          echo image-name='${{ github.repository }}' | tr '[:upper:]' '[:lower:]' | sed -e "s/^docker-//" >> $GITHUB_OUTPUT
       - name: Compute version
         id: compute-version
         run: |
