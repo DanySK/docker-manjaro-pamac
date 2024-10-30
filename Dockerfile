@@ -1,4 +1,4 @@
-FROM manjarolinux/base:20241024
+FROM manjarolinux/base:20241027
 RUN pacman -Syu --noconfirm
 RUN pacman -Sy --noconfirm pamac-cli libsoup3
 RUN pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
